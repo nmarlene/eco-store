@@ -27,8 +27,39 @@ nav .icons button {
   border: none;
 }
 
-main {
-  background-color: #FFEFE7;
+article {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  color: #7C6A0A;
+  padding: 0px 30px;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 25px;
+}
+article h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+article p {
+  font-size: 1.5em;
+}
+article button {
+  width: 10vw;
+  padding: 20px;
+  background-color: #E86424;
+  border-style: none;
+  border-radius: 35px;
+  color: white;
+  font-size: 1em;
+}
+article img {
+  width: 25vw;
+  border-radius: 15px;
 }
 
 footer {
