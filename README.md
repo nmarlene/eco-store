@@ -50,3 +50,15 @@ Pueden tener diferentes valores para distintos elementos	Tienen un valor único 
 Son declarativas	Son imperativas (en el momento en el que actualicemos el valor de nuestra variables va a cambiar en automático)
 !default flag
 Se encarga de asignar un valor a la variable si y solo si esa variable no esta definida o su valor en null.
+# Clase 5: Uso de selectores, scope variables y shadowing 
+Selector define sobre qué elementos se aplica un conjunto de reglas CSS
+Tipos:
+-Clase
+-ID
+-Tipo
+-Atributo
+Scope: Hace referencia al contexto en el q son declaradas las variables y donde es posible hacer uso de las mismas
+Variables locales: se declaran dentro de un bloque {}  y cualquier selector anidado puede acceder a las variables locales declaradas dentro del selector
+Variables globales:Por default, son declaradas fuera de un selector. Se puede acceder en cualquier parte de nuestra hoja de estilos
+Shadowing: Las variables locales y globales pueden tener los mismos nombres si se encuentran en diferente nivel del scope. Esto ayuda a que no se llegue modificar por error el valor de las variables globales 
+!global flag en caso que se quiere modificar el valor global de una variable dentro del scope de una varible local
