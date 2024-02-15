@@ -80,3 +80,6 @@ Nesting: la anidacion permite tener selectores dentro de otros, simplifican el c
 Las expresiones es todo lo que va del lado derecho de una variable, admitiendo varios tipos de valores. Ya que se pasan como argumentos a mixins y funciones
 Expresiones literales:
 -Numeros, Strings, Colores,Booleanos, Null, Listas y Mapas
+# Clase 8: ¿Qué es Herencia y cómo funciona SASS?
+Herencia mecanismo mediante el cual un selector puede recibir estilos CSS q viene de variables utilizadas previamente
+@extend permite organizar el codigo y crear CSS mas limpio
