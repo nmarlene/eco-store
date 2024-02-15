@@ -61,4 +61,18 @@ Scope: Hace referencia al contexto en el q son declaradas las variables y donde 
 Variables locales: se declaran dentro de un bloque {}  y cualquier selector anidado puede acceder a las variables locales declaradas dentro del selector
 Variables globales:Por default, son declaradas fuera de un selector. Se puede acceder en cualquier parte de nuestra hoja de estilos
 Shadowing: Las variables locales y globales pueden tener los mismos nombres si se encuentran en diferente nivel del scope. Esto ayuda a que no se llegue modificar por error el valor de las variables globales 
-!global flag en caso que se quiere modificar el valor global de una variable dentro del scope de una varible local
+!global flag en caso que se quiere modificar el valor global de una variable dentro del scope de una variable local
+# Clase 6: At Rules: Css y nesting 
+At-rules en CSS:
+Declaracion que cumple con diferentes funciones, se inicializa con el simbolo @ y cuenta con sintaxis propia. Mantiene compatibilidad con versiones futuras de Css
+Tipos:
+@use: importa, modulos estilos y funciones de otras hojas de estilos. la diferencia con @import es que import se encarga de hacer los estilos globales.
+@function: permite crear funciones personalizadas, sin embargo Sass cuenta con funciones ya existentes.
+@forward: Recibe como parametro una URL y nos ayuda a cargar los estilos de nuestra hoja de estilos, es muy importante hacer uso de @use para que los modulos esten disponibles en nuestra hoja de estilos.
+@extend: tiene que ver con el concepto de herencia.
+@at-root: se encarga de cargar nuestros estilos en el root del css.
+At-rules para compilacion
+@include: nos ayuda a invocar los mixins.
+@error, @warn @debug: sirver para cuando hay un error, una advertencia o se quiere debugear, respectivamente
+@for, @if, @each, @while: tienen que ver con estructuras de control, se pueden usar dentro de una función
+Nesting: la anidacion permite tener selectores dentro de otros, simplifican el codigo. Se escriben en el orden que estan en HTML

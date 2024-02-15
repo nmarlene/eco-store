@@ -1,18 +1,30 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
-  width: 100px;
-  height: 300px;
+  width: auto;
+  padding: 15px;
   display: flex;
+  justify-content: space-between;
 }
-
-button {
-  width: 100px;
-  height: 150px;
+nav p {
+  font-size: 1.5em;
+  padding-left: 15px;
+  color: #7C6A0A;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+  padding-right: 15px;
+}
+nav .icons button {
+  background: none;
+  border: none;
 }
 
 main {

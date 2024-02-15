@@ -5,19 +5,34 @@ $primary-text-color:#7C6A0A;
 $font-stackl: 'IBM Plex Sans' , sans-serif;
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+  background-color: $primary-color;
+  font-family: $font-stackl;
 }
 nav {
-  width: 100px;
-  height: 300px;
+  width: auto;
+  padding: 15px;
+  display:  flex;
+  justify-content: space-between;
+ //anidacion
+ p {
+  font-size: 1.5em;
+  padding-left: 15px;
+  color: $primary-text-color;
+ }
+ .icons {
   display: flex;
+  gap: 15px;
+  padding-right: 15px;
+  button{
+    background: none;
+    border: none;
+  }
+ }
 }
-button {
-  width: 100px;
-  height: 150px;
-}
+
 main {
   background-color: $primary-color;
 }
