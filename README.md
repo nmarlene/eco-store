@@ -23,3 +23,30 @@ Proceso de compilación:
 Imput file (archivo de entrada) —> Es donde vamos a escribir nuestros estilos haciendo uso de la sintaxis de Sass, incluyendo la extensión .scss en el nombre del archivo. .
 Output file (archivo de salida) —> Es donde se colocarán los estilos finales con CSS nativo, que provienen del archivo de entrada. (nunca se debe editar directamente el archivo de salida) .
 Los comandos para ejecutar y compilar Sass —> Hay varias formas de ejecutar y compilar Sass, cada una con sus propios comandos y herramientas. La elección del método dependerá del entorno de desarrollo y las preferencias personales del desarrollador.
+# Clase 4: Estructura de hoja de estilos y variables
+Estructura de la hoja de estilos
+Algunos statements contienen bloques y se definen entre un par de llaves { } , son separados mediante punto y coma ;
+
+Top-level statements
+Son declaraciones que solo se pueden usar en la parte superior de la hoja de estilos
+
+Imports
+Definición de un Mixin
+Definición de una Función
+Módulos
+Universal statements
+Son statements que podemos usar en cualquier parte de la hoja de estilos.
+
+Variables, estructuras de control y las reglas @error, @warn y @debug.
+Declaraciones CSS: Reglas de estilo, At-rules y Mixis.
+Variables
+Es un espacio de memoria asignado en memoria y únicamente puede almacenar un dato.
+
+Las variables pueden ser declaradas en cualquier parte de la hoja de estilos.
+Para asignar un valor a una variable se hace uso del simbolo $ de esta manera es posible referenciar dentro de la hoja de estilos.
+Diferencias en Variables en CSS y SASS
+CSS Variable	Sass Variables
+Pueden tener diferentes valores para distintos elementos	Tienen un valor único correspondiente a un elemento
+Son declarativas	Son imperativas (en el momento en el que actualicemos el valor de nuestra variables va a cambiar en automático)
+!default flag
+Se encarga de asignar un valor a la variable si y solo si esa variable no esta definida o su valor en null.
