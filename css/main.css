@@ -7,6 +7,12 @@ body {
 nav {
   width: 100px;
   height: 300px;
+  display: flex;
+}
+
+button {
+  width: 100px;
+  height: 150px;
 }
 
 main {
