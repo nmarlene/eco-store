@@ -76,3 +76,7 @@ At-rules para compilacion
 @error, @warn @debug: sirver para cuando hay un error, una advertencia o se quiere debugear, respectivamente
 @for, @if, @each, @while: tienen que ver con estructuras de control, se pueden usar dentro de una función
 Nesting: la anidacion permite tener selectores dentro de otros, simplifican el codigo. Se escriben en el orden que estan en HTML
+# Clase 7: Expresiones: literales y operaciones
+Las expresiones es todo lo que va del lado derecho de una variable, admitiendo varios tipos de valores. Ya que se pasan como argumentos a mixins y funciones
+Expresiones literales:
+-Numeros, Strings, Colores,Booleanos, Null, Listas y Mapas
