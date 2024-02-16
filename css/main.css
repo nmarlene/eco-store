@@ -49,7 +49,7 @@ article p {
   font-size: 1.5em;
 }
 article button {
-  width: 10vw;
+  width: 12vw;
   padding: 20px;
   background-color: #E86424;
   border-style: none;
@@ -60,6 +60,34 @@ article button {
 article img {
   width: 25vw;
   border-radius: 15px;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2em;
+}
+section .healthcare h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .healthcare .product-card {
+  width: 13vw;
+  height: auto;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .healthcare .product-card img {
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  border-radius: 6px;
 }
 
 footer {
