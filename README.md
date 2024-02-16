@@ -86,4 +86,23 @@ Herencia mecanismo mediante el cual un selector puede recibir estilos CSS q vien
 # Clase 9 : Mixins en CSS
 Mixins permiten definir estilos q se pueden reutilizar en toda su hoja de estilos y facilitan evitar el uso de clase no semanticas 
 Se declara con regla @minxin seguido del nombre que queremos que se asigne y se invoca con @include seguido del nombre del mixin
-Argumentos en mixin es el nombre de la variable que esta separa por una coma
+Argumentos en mixin es el nombre de la variable que esta separado por una coma
+# Clase 10: Funciones
+Las funciones permiten definir operaciones complejas en valores de SASS, se definen usando la regla @function
+Tipos:
+- RGB 
+- HSL
+- Opacidad
+- Strings
+- Numeros
+Sass es compatible con operadores utiles para trabajar valores, incluyen operadores estandar y otros tipos == y !=
+Jerarquia de operaciones:
+1. Unarios not, + y -;
+2. *, / y %;
+3. + Y -;
+4. >,>=,< Y <=
+5. == Y !=
+6. logico AND
+7. logico OR
+8. asignacion =
+Declaracion de funcion: se llaman utilizando de sintaxis de funcion CSS normal
