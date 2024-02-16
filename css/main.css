@@ -10,7 +10,9 @@ nav {
   width: auto;
   padding: 15px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 nav p {
   font-size: 1.5em;
@@ -24,12 +26,14 @@ nav .icons {
 }
 nav .icons button {
   background: none;
-  border: none;
+  border-style: none;
 }
 
 article {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: auto;
   color: #7C6A0A;
   padding: 0px 30px;
@@ -49,10 +53,13 @@ article p {
   font-size: 1.5em;
 }
 article button {
+  background: none;
+  border-style: none;
+}
+article button {
   width: 12vw;
   padding: 20px;
   background-color: #E86424;
-  border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
@@ -80,9 +87,10 @@ section .healthcare h2, section .furniture h2 {
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   gap: 100px;
   width: auto;
   height: auto;
@@ -109,9 +117,9 @@ section .healthcare .product-card .product-image, section .furniture .product-ca
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
   width: 13vw;

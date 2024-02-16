@@ -1,3 +1,4 @@
+//variables
 $primary-color:#FFEFE7;
 $secundary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
@@ -5,7 +6,19 @@ $primary-text-color:#7C6A0A;
 $quaternion-color: #E86424;
 $font-stackl: 'IBM Plex Sans' , sans-serif;
 $paragraph-size: 1.5em;
-
+//mixins
+@mixin flexCenter($direction,$content,$align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+@mixin buttonStyle {
+  button {
+    background: none;
+    border-style: none;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -13,12 +26,12 @@ body {
   background-color: $primary-color;
   font-family: $font-stackl;
 }
+
 nav {
   width: auto;
   padding: 15px;
-  display:  flex;
-  justify-content: space-between;
- //anidacion
+  @include flexCenter(row,space-between,center);
+
  p {
   font-size: 1.5em;
   padding-left: 15px;
@@ -28,19 +41,16 @@ nav {
   display: flex;
   gap: 15px;
   padding-right: 15px;
-  button{
-    background: none;
-    border: none;
-  }
+  @include buttonStyle;
+
  }
 }
 article{
-  display: flex;
-  justify-content: space-between;
+  @include flexCenter(row,space-between,center);
   width: auto;
   color: $primary-text-color;
   padding: 0px 30px;
- 
+
  .impact-section{
   display: flex;
   flex-direction: column;
@@ -55,11 +65,11 @@ article{
   p{
     font-size: $paragraph-size;
   }
+  @include buttonStyle;
   button{
     width: 12vw;
     padding: 20px;
     background-color: $quaternion-color;
-    border-style: none;
     border-radius: 35px;
     color: white;
     font-size: 1em;
@@ -85,10 +95,8 @@ section {
       padding-bottom: 60px;
     }
     .card-section {
-      display: flex;
-      justify-content: center;
+     @include flexCenter(row,center,center);
       flex-wrap: wrap;
-      align-items: center;
       gap: 100px;
       width: auto;
       height: auto;
@@ -108,16 +116,13 @@ section {
       svg {
         width: 28px;
         height: 28px;
-      
+
       }
     }
     .product-image{
         width: 100%;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flexCenter(column,center , center);
        img {
         width:13vw;
         height: 30vh;
@@ -135,10 +140,8 @@ section {
     }
   }
 }
-
-
 footer{
- 
+
   background-color: $quaternion-color;
   width: 100%;
   height: 250px;
