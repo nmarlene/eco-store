@@ -64,6 +64,10 @@ article button {
   color: white;
   font-size: 1em;
 }
+article button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
 article img {
   width: 25vw;
   border-radius: 15px;
@@ -160,6 +164,31 @@ section .furniture .product-card {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.gallery .gallery-image img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-image img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;

@@ -73,6 +73,10 @@ article{
     border-radius: 35px;
     color: white;
     font-size: 1em;
+     &:hover{
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+            }
   }
     img{
       width: 25vw;
@@ -148,7 +152,7 @@ section {
     padding-bottom: 60px;
   }
   .mision-section {
-    @include flexCenter(row,space-evenly , center );
+    @include flexCenter(row,space-evenly,center );
     .earth {
       width: 30vw;
       display: flex;
@@ -166,6 +170,29 @@ section {
   .inovation {
     @extend .earth;
   }
+}
+
+.gallery{
+  h2 {
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+    .gallery-image{
+      @include flexCenter(row,  space-between, center);
+      gap: 20px;
+        img{
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            //animacion
+            &:hover{
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+            }
+        }
+    }
 }
 footer{
 
