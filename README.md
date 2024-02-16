@@ -83,3 +83,7 @@ Expresiones literales:
 # Clase 8: ¿Qué es Herencia y cómo funciona SASS?
 Herencia mecanismo mediante el cual un selector puede recibir estilos CSS q viene de variables utilizadas previamente
 @extend permite organizar el codigo y crear CSS mas limpio
+# Clase 9 : Mixins en CSS
+Mixins permiten definir estilos q se pueden reutilizar en toda su hoja de estilos y facilitan evitar el uso de clase no semanticas 
+Se declara con regla @minxin seguido del nombre que queremos que se asigne y se invoca con @include seguido del nombre del mixin
+Argumentos en mixin es el nombre de la variable que esta separa por una coma
