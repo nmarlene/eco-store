@@ -3,7 +3,7 @@ $primary-color:#FFEFE7;
 $secundary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
 $primary-text-color:#7C6A0A;
-$quaternion-color: #E86424;
+$quaternion-color: #FA9500;
 $font-stackl: 'IBM Plex Sans' , sans-serif;
 $paragraph-size: 1.5em;
 //mixins
@@ -138,6 +138,33 @@ section {
       background-color: $tertiary-color;
       color: white;
     }
+  }
+}
+//section about-us
+.about-us{
+  padding-bottom: 60px;
+  h2 {
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+  .mision-section {
+    @include flexCenter(row,space-evenly , center );
+    .earth {
+      width: 30vw;
+      display: flex;
+      gap: 40px;
+      color: #E86424;
+      p {
+        font-size: $paragraph-size;
+         text-align: center;
+      }
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+  .inovation {
+    @extend .earth;
   }
 }
 footer{
